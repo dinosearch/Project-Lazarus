@@ -1,0 +1,357 @@
+/* style.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+
+    width: 70%;
+    max-width: 900px;
+
+    background-color: rgba(20,20,20,0.85);
+
+    border: 2px solid red;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px red;
+
+    animation: flicker 3s infinite;
+}
+
+h1{
+    color: red;
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    letter-spacing: 3px;
+}
+
+h2{
+    margin-bottom: 20px;
+
+    color: #ff4d4d;
+
+    text-align: center;
+}
+
+p{
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+.buttons{
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+button{
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    background-color: black;
+
+    color: white;
+
+    border: 2px solid red;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: red;
+
+    color: black;
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 15px red;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* STARTMENU (index.html) */
+
+.menu-page{
+    background-image: url("computer_terminal.jpg");
+}
+
+.menu-page .container{
+    text-align: center;
+
+    box-shadow: 0 0 40px red;
+}
+
+.menu-page h1{
+    font-size: 70px;
+}
+
+.terminal{
+    font-family: "Courier New", monospace;
+
+    color: #8cff8c;
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+/* "STORY BEENDEN" BUTTON */
+
+.quit-button{
+    position: fixed;
+
+    top: 15px;
+    right: 15px;
+
+    z-index: 999;
+}
+
+.quit-button a{
+    color: white;
+
+    border: 1px solid red;
+
+    padding: 8px 12px;
+
+    background-color: rgba(0,0,0,0.8);
+
+    transition: 0.3s;
+}
+
+.quit-button a:hover{
+    background-color: red;
+
+    color: black;
+
+    box-shadow: 0 0 10px red;
+}
+
+/* IMPORTANT STORY-TEXTS */
+
+.warnung{
+    color: red;
+    font-weight: bold;
+}
+
+.code{
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.alarm{
+    color: orange;
+    font-weight: bold;
+}
+
+/* TABLE */
+
+table{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th{
+    border: 1px solid red;
+
+    padding: 10px;
+
+    background-color: rgba(255,0,0,0.2);
+}
+
+td{
+    border: 1px solid red;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+/* LISTS */
+
+ul{
+    margin-left: 25px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+/* IMAGES */
+
+img{
+    max-width: 100%;
+
+    border: 2px solid red;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px red;
+}
+
+/* FLICKER EFFECT */
+
+@keyframes flicker{
+
+    0%{
+        opacity: 1;
+    }
+
+    2%{
+        opacity: 0.9;
+    }
+
+    4%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    71%{
+        opacity: 0.8;
+    }
+
+    72%{
+        opacity: 1;
+    }
+}
+
+
+
+.menu-page{
+    background-image: url("computer_terminal.jpg");
+}
+
+.aufwachraum{
+    background-image: url("aufwachraum.png");
+}
+
+.tablet{
+    background-image: url("tablet.jpg");
+}
+
+.hallway{
+    background-image: url("hallway.jpg");
+}
+
+.power{
+    background-image: url("generatorraum.jpg");
+}
+
+.alarm{
+    background-image: url("alarm.jpg");
+}
+
+.alarm-room{
+    background-image: url("alarm-room.jpg");
+}
+
+.control{
+    background-image: url("kontrollraum.jpg");
+}
+
+.laboratory{
+    background-image: url("laboratory.jpg");
+}
+
+.darkroom{
+    background-image: url("darkroom.jpg");
+}
+
+.geheimarchiv{
+    background-image: url("geheimarchiv.jpg");
+}
+
+.escape{
+    background-image: url("flucht.jpg");
+}
+
+.good-ending{
+    background-image: url("goodending.jpg");
+}
+
+.secret-ending{
+    background-image: url("secretending.jpg");
+}
+
+.mutation-ending{
+    background-image: url("mutation.jpg");
+}
+
+.rescue-ending{
+    background-image: url("rescue.jpg");
+}
+
+.destruction-ending{
+    background-image: url("explosion.jpg");
+}
+
+.death1-ending{
+    background-image: url("creature.jpg");
+}
+
+.death2-ending{
+    background-image: url("death_explosion.jpg");
+}
+
